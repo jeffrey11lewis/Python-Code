@@ -1,4 +1,4 @@
-from main import StringInstrument
+from instrumentInformation import StringInstrument
 
 def testPassed(testFeedback):
     myStringInstrument = StringInstrument('Guitar', 'Schecter', 2011, 1200, 6, 24)
