@@ -1,3 +1,4 @@
+#filename is file1
 def findIfTXT(fileName):
     reversefileName = fileName[::-1]
     splitFilename = reversefileName.split(".")
