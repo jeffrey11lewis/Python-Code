@@ -1,21 +1,3 @@
-"""def createShortcutName(targetPath):
-
-    reverseTargetPath = targetPath[::-1]
-
-    print('reverse target path: ', reverseTargetPath)
-    splitTargetPath = reverseTargetPath.split(r'\\')
-    splitTargetPath = reverseTargetPath.split(r'\\')
-    print('split target path: ', splitTargetPath)
-    splitTargetPath[0] 
-    print(shortcutName)
-    shortcutName = shortcutName[::-1]
-
-    print(shortcutName)
-    return shortcutName
-"""
-
-
-
 targetPath = input('please enter the full filepath of your directory: ')
 shortcutName = input('please enter the name of the shortcut: ')
 
