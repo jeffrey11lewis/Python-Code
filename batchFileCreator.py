@@ -33,6 +33,7 @@ echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%''').format(shortcutName, targetPath)
 print(writeCode)
+print('\nPROCESS HAS FINISHED')
 
 
 

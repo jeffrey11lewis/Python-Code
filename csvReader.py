@@ -1,9 +1,14 @@
 #filename is bob
 import csv
 print('please input the name of the csv file you are looking for:')
+r = 0
+def unitTestTEST(r):
+    spicyTest = r * 3
 
+    return spicyTest
 
 def findIfCSV(fileName):
+    
     #print('hello from findIfCSV')
     reversefileName = fileName[::-1]
     #print(reversefileName)
@@ -12,14 +17,21 @@ def findIfCSV(fileName):
     #print(splitFilename[0])
 
     if splitFilename[0] == 'vsc':
+        
         #print('yay! no problem.')
+        
         return fileName
         
     else:
-        newfileName = fileName + '.csv'
-        #print('the new filename is ' + newfileName)
-        return newfileName
 
+        newfileName = fileName + '.csv'
+    
+    if newfileName != 'bob.csv':
+        raise SyntaxError("the filename must be bob.csv")        
+    
+
+    return newfileName
+   
 
 
 
@@ -28,11 +40,11 @@ fileName = input()
 #findIfCSV(fileName)
 
 filepath = str('C:\\Users\\torch\\Documents\\Virtual Studio Code\\Python Code\\') + findIfCSV(fileName)
+unitTestTEST(r)
 
 
-
-print(filepath + ' is the filepath')
-print(findIfCSV(fileName) + ' is the filename\n')
+#print(filepath + ' is the filepath')
+#print(findIfCSV(fileName) + ' is the filename\n')
 
 wordList = []
 
